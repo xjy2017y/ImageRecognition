@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\4c83e74fb29b456733b18eeb9e320f808d2b903b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_8bf9e86fbef0358be644eb1f32e29fa5db670e32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\3d4c3a1e07b3fa89105b9df9cc6ceafd1c0f5237\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_f381cb5e702a78d45f5f7d6781bde77bb92bdb43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\b2f562ed7597b09fb7f40cc6e91449376aae0572\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_a0a7ab96d62a1355a514546c4f2e2556f0a8c29a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\75bb4adee5a966487d9e92ff95cf050eae8a97fe\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_7d397be42ae767eb45b8f6e390a892f677b7ba2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\344ce7db6c128bb01f469b1d0fae2147e831d020\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_c61c1341b39539e653b09e64a7e9673dbcb0aec7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d8b4057e74c54ee28979f69981f85731a3e29be7">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2572d7d1804404ba90f2298988dedfd2264a3ae4\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\b8a5610390c04b212944528b28acb0c26e5a1d86\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_f1db2a43f941a645f50f78088ef5eae3baa6201f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.0_cd4211d308d942e8929a1e74c1bdfa93ef15ea3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\8b410015977fdab8bbfde46f4c3b1be5a24d4ca3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_de57938ef10f635e58ab3a8f948e4dd4523bab7d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cf16e940a86bc74330911ad070b40e5f29416258\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\aika-python\ARRedPacket\libraries\opencv\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="36e67152006a651b22cdbd628a2d16b9cdf142c1">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_c5756a2ded89b37933f373dbbe3b8c0fa80cf871.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\65d87ac3306b4bb4a73ab86191d87c97ab096555\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_eea56ff709e7c28faf1bcbd5b4518698724048b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\94c7ce42c90ba8ee8fed6409c5c18d49364ad1b8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\Administrator\aika-python\ARRedPacket\app\build\intermediates\pre-dexed\debug\classes_a6d3c4e41ee26e0bcde73bbe3716725cbe6999d7.jar" />
+    </item>
+
+</items>
