@@ -6,6 +6,8 @@ import android.util.Log;
 import org.opencv.android.Utils;
 import org.opencv.core.DMatch;
 import org.opencv.core.KeyPoint;
+//import org.opencv.features2d.DMatch;
+//import org.opencv.features2d.KeyPoint;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfDMatch;
 import org.opencv.features2d.DescriptorMatcher;
@@ -43,7 +45,7 @@ public class Match {
             Log.e("ERROR", "match:hidedPic or findedPic is null!!!");
             return;
         }else{
-            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMING);
+            DescriptorMatcher matcher = DescriptorMatcher.create(DescriptorMatcher.BRUTEFORCE_HAMMINGLUT);
             matches = new MatOfDMatch();
             hidedPic.good_Keypoints = new LinkedList<>();
             findedPic.good_Keypoints = new LinkedList<>();

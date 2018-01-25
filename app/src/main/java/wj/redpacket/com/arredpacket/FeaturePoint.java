@@ -1,21 +1,32 @@
 package wj.redpacket.com.arredpacket;
 
+import android.graphics.Bitmap;
 import android.media.audiofx.AudioEffect;
+import android.os.Environment;
 import android.util.Log;
 
+import org.opencv.android.Utils;
 import org.opencv.core.DMatch;
 import org.opencv.core.KeyPoint;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfKeyPoint;
 import org.opencv.features2d.DescriptorExtractor;
 import org.opencv.features2d.FeatureDetector;
-import org.opencv.features2d.ORB;
+import org.opencv.features2d.*;
+//import org.opencv.features2d.KeyPoint;
+//import org.opencv.features2d.ORB;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+
+import static org.opencv.core.CvType.CV_8UC4;
 
 /**
  * Created by Administrator on 2018/1/11.
@@ -23,8 +34,8 @@ import java.util.List;
 
 public class FeaturePoint {
     private final int MAX_GROUP_NUM = 50;       //定义cr的大小
-    private final double TOP = 0.2;
-    private final int dc =9;      //截断距离
+    private final double TOP = 0.1;         //原来是0.2
+    private final int dc =30;      //截断距离
     private final int MAX_FEATURE_NUM = 1000;       //特征点最大数目
     public Mat rgbd;
     public MatOfKeyPoint keyPoints;
@@ -75,7 +86,7 @@ public class FeaturePoint {
     public MatOfKeyPoint getKeyPoints() {
         return keyPoints;
     }
-    public void setTargetKeyPoints(){
+    public void setTargetKeyPoints() {
         keyPoints = new MatOfKeyPoint();
         descriptors = new Mat();
         if (type == 1){         //使用ORB算法
@@ -83,9 +94,27 @@ public class FeaturePoint {
             DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.ORB);
             detector.detect(rgbd, keyPoints);
             descriptor.compute(rgbd,keyPoints,descriptors);
+//            Log.i("Image1",""+rgbd.rows()+"   "+rgbd.cols());
+//            Mat result = new Mat(1080,1920,CV_8UC4);
+//            Features2d.drawKeypoints(rgbd,keyPoints,result);
+//            Bitmap bit  = null;
+//            Utils.matToBitmap(result,bit);
+//            FileOutputStream out;
+//            File file = new File(Environment.getExternalStorageDirectory(), System.currentTimeMillis()+".jpg");
+//            try {
+//                out = new FileOutputStream(file);
+//                bit.compress(Bitmap.CompressFormat.JPEG, 90, out);
+//                System.out.println("___________保存的__sd___下_______________________");
+//                out.flush();
+//                out.close();
+//            } catch (FileNotFoundException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         }else if(type == 2){
-            FeatureDetector detector = FeatureDetector.create(FeatureDetector.SURF);
-            DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.SURF);
+            FeatureDetector detector = FeatureDetector.create(FeatureDetector.SIFT);
+            DescriptorExtractor descriptor = DescriptorExtractor.create(DescriptorExtractor.SIFT);
             detector.detect(rgbd,keyPoints);
             descriptor.compute(rgbd,keyPoints,descriptors);
         }

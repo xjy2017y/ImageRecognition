@@ -14,6 +14,7 @@ public class Similarity {
     private final int MAX_GROUP_NUM = 50;
     private final double NUM_RATIO = 0.6;
     private final double CLR_RATIO = 0.4;
+    private final double DIST_RATIO = 0.2;
     public int match_cout;
     public int vaild_match;
     public int point_cout;
@@ -126,7 +127,7 @@ public class Similarity {
         Log.i("Image1 match_cout is",""+match_cout);
         for (int k = 0; k < match_cout; k++) {
             getClrVal(k, fa1, fa2);			//对一对similar聚类内的点RGB3色取平均值
-            if (clrVaild(ml[k].r1, ml[k].g1, ml[k].b1, ml[k].r2, ml[k].g2, ml[k].b2) ) {	//对平均值进行对比，3色中有俩色符合即为true    //&& posValild(ml[k].c1_index, ml[k].c2_index, fp.rgbd1.cols, fp, fa1, fa2)
+            if (clrVaild(ml[k].r1, ml[k].g1, ml[k].b1, ml[k].r2, ml[k].g2, ml[k].b2) && posValid(ml[k].c1_index, ml[k].c2_index,fa1,fa2)){	//对平均值进行对比，3色中有俩色符合即为true    //&& posValild(ml[k].c1_index, ml[k].c2_index, fp.rgbd1.cols, fp, fa1, fa2)
                 ml[k].isVaild = true;
                 vaild_point += fa2.cr[k].num;
             }
@@ -137,6 +138,19 @@ public class Similarity {
             return false;
         Log.i("Image1 vaild_match is",""+vaild_match);
         if (vaild_match < match_cout*0.80)			//match数少于一定数目返回false
+            return false;
+
+        return true;
+    }
+
+    public boolean posValid(int idx1,int idx2,FeaturePoint fa1,FeaturePoint fa2){
+        double x1 = fa1.good_Keypoints.get(fa1.cr[idx1].index).pt.x;
+        double y1 = fa1.good_Keypoints.get(fa1.cr[idx1].index).pt.y;
+        double x2 = fa2.good_Keypoints.get(fa2.cr[idx2].index).pt.x;
+        double y2 = fa2.good_Keypoints.get(fa2.cr[idx2].index).pt.y;
+        double distx = Math.abs(x1 - x2);
+        double disty = Math.abs(y1 - y2);
+        if (distx > fa1.rgbd.cols()*DIST_RATIO || disty > fa1.rgbd.cols()*DIST_RATIO)
             return false;
 
         return true;
